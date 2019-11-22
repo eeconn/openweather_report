@@ -48,10 +48,10 @@ def day_index(forecast: dict, forecast_day: int) -> Tuple[int, int]:
     if start_index == math.nan:
         raise ValueError("Date out of range.")
 
-    # now find the last index in the case that we are asking for the last
-    # day in the forecast file, we SHOULD get this far in the function so we
-    # know where the day starts. Just have it end on the last index since we
-    # won't see the next day.
+    # now find the last index 
+    # in the case that we are asking for the last day in the forecast file,
+    # we SHOULD get this far in the function so we know where the day starts.
+    # Just have it end on the last index since we won't see the next day.
 
     # TODO: the final index probably shouldn't be hardcoded; this leaves the
     # program vulnerable to changes in OWM's API.
