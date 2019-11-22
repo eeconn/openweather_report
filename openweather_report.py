@@ -117,6 +117,7 @@ def wcondition(forecast: dict, forecast_day: int) > Tuple[str, float]:
 # MAIN
 
 # Fetch the weather reports
+# TODO: allow unit choice. This is currently very American-centric.
 forecast_json = requests.get(
     f"http://api.openweathermap.org/data/2.5/forecast?APPID={ow_api_key}&id={location_code}&units=imperial"
     )
