@@ -22,7 +22,7 @@ location_code = "YOUR_LOCATION_CODE"
 # the location code is 5128581
 
 # Get the running user's username for a personalized greeting.
-username = pwd.getpwuid(os.getuid()).pw_name
+username = os.getlogin()
 
 
 def day_index(forecast: dict, forecast_day: int) -> Tuple[int, int]:
@@ -93,7 +93,7 @@ def min_temp(forecast: dict, forecast_day: int) -> float:
     return low_temp
 
 
-def wcondition(forecast: dict, forecast_day: int) > Tuple[str, float]:
+def wcondition(forecast: dict, forecast_day: int) -> Tuple[str, float]:
     # TODO: The question here is how to decide what constitutes the weather
     # conditions for the day.  Just select an arbitrary timestamp and use
     # that condition?  Try to figure out what sticks the longest?  Currently
