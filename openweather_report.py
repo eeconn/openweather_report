@@ -137,7 +137,14 @@ uvindex_json = requests.get(
     )
 uvindex = uvindex_json.json()
 
-print(f"Hello {username}.")
+if time.localtime()[3] < 12:
+    greeting = "Good morning"
+elif time.localtime()[3] < 18:
+    greeting = "Good afternoon"
+else:
+    greeting = "Good evening"
+
+print(f"{greeting} {username}.")
 print(
     f"The current time is {time.strftime('%I:%M %p', time.localtime())} on {time.strftime('%a, %b %d %Y', time.localtime())}."
     )
