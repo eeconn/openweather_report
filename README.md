@@ -20,6 +20,11 @@ Tomorrow's conditions: overcast clouds with 4.94 mph winds and a max UV index of
 
 This must be run in python3. Python 2.7 and earlier will throw several errors.
 
+You will need to install the [requests module](https://pypi.org/project/requests/). You can install it using pip:
+```
+pip install requests
+```
+
 You will need a free API key from OpenWeatherMap. Instructions for getting a key can be found at <https://openweathermap.org/guide#how>. You will also need your location code, which can be found by searching for your city at <https://openweathermap.org/city>. The location code will be listed at the end of the URL. For example, the weather report URL for New York City is <https://openweathermap.org/city/5128581>. The location code is 5128581.
 
 Once you have the API key and location code, add them to openweather.py in place of "YOUR_OPENWEATHERMAP_API_KEY" and "YOUR_LOCATION_CODE"
