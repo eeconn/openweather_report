@@ -25,9 +25,14 @@ You will need to install the [requests module](https://pypi.org/project/requests
 pip install requests
 ```
 
-You will need a free API key from OpenWeatherMap. Instructions for getting a key can be found at <https://openweathermap.org/guide#how>. You will also need your location code, which can be found by searching for your city at <https://openweathermap.org/city>. The location code will be listed at the end of the URL. For example, the weather report URL for New York City is <https://openweathermap.org/city/5128581>. The location code is 5128581.
+You will need a free API key from OpenWeatherMap. Instructions for getting a key can be found at <https://openweathermap.org/guide#how>.
+You will also need your location code, which can be found by searching for your city at
+<https://openweathermap.org/city>. The location code will be listed at the end of the URL.
+For example, the weather report URL for New York City is <https://openweathermap.org/city/5128581>.
+The location code is 5128581.
 
-Once you have the API key and location code, add them to openweather.py in place of "YOUR_OPENWEATHERMAP_API_KEY" and "YOUR_LOCATION_CODE"
+Once you have the API key and location code, add them to openweather.py in place of
+"YOUR_OPENWEATHERMAP_API_KEY" and "YOUR_LOCATION_CODE"
 
 ```python
 ow_api_key = "YOUR_OPENWEATHERMAP_API_KEY"
