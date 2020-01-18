@@ -1,6 +1,9 @@
 # openweather_report
 
-This is a project I started to learn how to work with JSON files in Python3. I was interested in using [OpenWeatherMap](https://openweathermap.org)'s API as a replacement for the defunct Yahoo! Weather API used for fetching weather reports in the  [conky-google-now](https://github.com/mariusv/conky-google-now) .conkyrc configuration, so I started this project to get a handle on how to fetch the forecast information in the format I want.
+This is a project I started to learn how to work with JSON files in Python3. I was interested in using
+[OpenWeatherMap](https://openweathermap.org)'s API as a replacement for the defunct Yahoo! Weather API used for
+fetching weather reports in the [conky-google-now](https://github.com/mariusv/conky-google-now) .conkyrc configuration,
+so I started this project to get a handle on how to fetch the forecast information in the format I want.
 
 Currently, this script outputs a text weather report to the console:
 
